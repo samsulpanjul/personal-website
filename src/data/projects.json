@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Relic Builder",
+    "description": "Relic Builder is a web tools for customize character in gacha game Honkai: Star Rail (private server).",
+    "tech": ["React", "tailwindcss", "Zustand"],
+    "repo": "https://github.com/samsulpanjul/relic-builder",
+    "website": "https://relic-builder.vercel.app/"
+  },
+  {
+    "title": "buruakadle",
+    "description": "a Wordle-inspired game with words from Blue Archive.",
+    "tech": ["React", "Ant Design"],
+    "repo": "https://github.com/samsulpanjul/buruakadle",
+    "website": "https://buruakadle.vercel.app/"
+  },
+  {
+    "title": "waifulo",
+    "description": "waifulo is a web to roast your waifu using AI with Gemini API.",
+    "tech": ["React", "TypeScript", "tailwindcss", "Gemini API"],
+    "repo": "https://github.com/samsulpanjul/waifulo",
+    "website": "https://waifulo-zeta.vercel.app/"
+  },
+  {
+    "title": "kopi-pasta",
+    "description": "kopi-pasta is an Indonesian copypasta archive where users can log in with Google OAuth and create their own copypasta templates.",
+    "tech": ["React", "Next.js", "TypeScript", "tailwindcss", "Jotai", "React Query", "Axios", "Supabase"],
+    "repo": "https://github.com/samsulpanjul/kopi-pasta",
+    "website": "https://kopi-pasta.vercel.app/"
+  }
+]

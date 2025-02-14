@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+  background-color: #171717;
+}
+
+@theme {
+  --color-secondary: #aaa;
+}
+
+@layer components {
+  .box {
+    @apply border border-neutral-500 rounded-md px-4 py-2;
+  }
+}
