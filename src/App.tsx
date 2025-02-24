@@ -4,6 +4,7 @@ import tech from "./data/tech.json"
 import GitHubLogo from "./components/icons/GitHubLogo"
 import Mail from "./components/icons/Mail"
 import LinkedInLogo from "./components/icons/LinkedInLogo"
+import Globe from "./components/icons/Globe"
 
 function App() {
   return (
@@ -76,11 +77,21 @@ function App() {
               <p className="text-secondary mt-2">tech used: {project.tech.join(", ")}</p>
               <div className="flex gap-2 mt-2">
                 <a
+                  href={project.website}
+                  target="_blank"
+                  className="hover:underline flex gap-2"
+                >
+                  <Globe />
+                  <span>Website</span>
+                </a>
+                |
+                <a
                   href={project.repo}
                   target="_blank"
                   className="hover:underline flex gap-2"
                 >
-                  <GitHubLogo /> <span>Repository</span>
+                  <GitHubLogo />
+                  <span>Repository</span>
                 </a>
               </div>
             </div>
