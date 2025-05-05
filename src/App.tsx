@@ -1,4 +1,5 @@
 import Section from "./components/Section"
+import cooking from "./data/cooking.json"
 import projects from "./data/projects.json"
 import tech from "./data/tech.json"
 import GitHubLogo from "./components/icons/GitHubLogo"
@@ -58,6 +59,39 @@ function App() {
           <div>
             <p>Universitas Islam Syekh-Yusuf</p>
             <p className="text-secondary">2021 - present</p>
+          </div>
+        </Section>
+        <Section title="cooking 🧑‍🍳">
+          <p className="text-secondary">A project I'm currently working on</p>
+          <div className="mt-2 box border-white border-2">
+            <a
+              href={cooking.website}
+              target="_blank"
+              className="hover:underline text-lg"
+            >
+              {cooking.title}
+            </a>
+            <p className="text-secondary">{cooking.description}</p>
+            <p className="text-secondary mt-2">tech used: {cooking.tech.join(", ")}</p>
+            <div className="flex gap-2 mt-2">
+              <a
+                href={cooking.website}
+                target="_blank"
+                className="hover:underline flex gap-2"
+              >
+                <Globe />
+                <span>Website</span>
+              </a>
+              |
+              <a
+                href={cooking.repo}
+                target="_blank"
+                className="hover:underline flex gap-2"
+              >
+                <GitHubLogo />
+                <span>Repository</span>
+              </a>
+            </div>
           </div>
         </Section>
         <Section title="projects 🚀">
