@@ -14,8 +14,15 @@ function App() {
         <div className="flex flex-col justify-evenly py-2">
           <h2 className="text-xl">Galih Aditya Dwisevi</h2>
           <p className="text-secondary">front-end web developer</p>
+          <a
+            href="/CV GALIH_ADITYA_DWISEVI.pdf"
+            download
+            className="mt-2 inline-block bg-neutral-800 text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-neutral-700/70 transition w-max"
+          >
+            Download CV
+          </a>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 justify-center">
           <a
             href="mailto:galih.aditya227@gmail.com"
             target="_blank"
@@ -39,7 +46,7 @@ function App() {
       <div className="flex flex-col gap-4">
         <Section title="me 🧑">
           <p className="text-secondary">
-            I'm a passionate front-end web developer who loves crafting interactive and user-friendly interfaces. I'm always eager to learn and improve my skills by building projects and exploring new technologies.
+            Front-end web developer with a focus on creating responsive, accessible, and user-centered interfaces. Continuously learning and improving through hands-on projects and keeping up with modern web technologies.
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
             <p>technologies I have worked with:</p>
@@ -56,10 +63,12 @@ function App() {
           </div>
         </Section>
         <Section title="study 🎓">
-          <div>
+          <div className="flex justify-between">
             <p>Universitas Islam Syekh-Yusuf</p>
-            <p className="text-secondary">2021 - present</p>
+            <p className="text-secondary">2021 - 2025 (expected)</p>
           </div>
+          <p>GPA: 3.64/4.00</p>
+          <p>Semester 8</p>
         </Section>
         <Section title="cooking 🧑‍🍳">
           <p className="text-secondary">A project I'm currently working on</p>
