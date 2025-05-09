@@ -23,7 +23,7 @@
   {
     "title": "kopi-pasta",
     "description": "kopi-pasta is an Indonesian copypasta archive where users can log in with Google OAuth and create their own copypasta templates.",
-    "tech": ["React", "Next.js", "TypeScript", "tailwindcss", "Jotai", "React Query", "Axios", "Supabase"],
+    "tech": ["React", "Next.js", "TypeScript", "tailwindcss", "Jotai", "React Query", "Axios", "Supabase", "Zod", "React Hook Form"],
     "repo": "https://github.com/samsulpanjul/kopi-pasta",
     "website": "https://kopi-pasta.vercel.app/"
   }
