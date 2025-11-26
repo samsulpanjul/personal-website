@@ -1,11 +1,11 @@
-import Section from "./components/Section"
-import cooking from "./data/cooking.json"
-import projects from "./data/projects.json"
-import tech from "./data/tech.json"
-import GitHubLogo from "./components/icons/GitHubLogo"
-import Mail from "./components/icons/Mail"
-import LinkedInLogo from "./components/icons/LinkedInLogo"
-import Globe from "./components/icons/Globe"
+import Section from "./components/Section";
+import cooking from "./data/cooking.json";
+import projects from "./data/projects.json";
+import tech from "./data/tech.json";
+import GitHubLogo from "./components/icons/GitHubLogo";
+import Mail from "./components/icons/Mail";
+import LinkedInLogo from "./components/icons/LinkedInLogo";
+import Globe from "./components/icons/Globe";
 
 function App() {
   return (
@@ -23,16 +23,10 @@ function App() {
           </a>
         </div>
         <div className="flex flex-col gap-2 justify-center">
-          <a
-            href="mailto:galih.aditya227@gmail.com"
-            target="_blank"
-          >
+          <a href="mailto:galih.aditya227@gmail.com" target="_blank">
             <Mail />
           </a>
-          <a
-            href="https://github.com/samsulpanjul"
-            target="_blank"
-          >
+          <a href="https://github.com/samsulpanjul" target="_blank">
             <GitHubLogo />
           </a>
           <a
@@ -46,7 +40,10 @@ function App() {
       <div className="flex flex-col gap-4">
         <Section title="me 🧑">
           <p className="text-secondary">
-            Front-end web developer with a focus on creating responsive, accessible, and user-centered interfaces. Continuously learning and improving through hands-on projects and keeping up with modern web technologies.
+            Front-end web developer with a focus on creating responsive,
+            accessible, and user-centered interfaces. Continuously learning and
+            improving through hands-on projects and keeping up with modern web
+            technologies.
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
             <p>technologies I have worked with:</p>
@@ -65,7 +62,7 @@ function App() {
         <Section title="study 🎓">
           <div className="flex justify-between">
             <p>Universitas Islam Syekh-Yusuf</p>
-            <p className="text-secondary">2021 - 2025 (expected)</p>
+            <p className="text-secondary">2021 - 2025</p>
           </div>
           <p>GPA: 3.64/4.00</p>
           <p>Semester 8</p>
@@ -81,7 +78,9 @@ function App() {
               {cooking.title}
             </a>
             <p className="text-secondary">{cooking.description}</p>
-            <p className="text-secondary mt-2">tech used: {cooking.tech.join(", ")}</p>
+            <p className="text-secondary mt-2">
+              tech used: {cooking.tech.join(", ")}
+            </p>
             <div className="flex gap-2 mt-2">
               <a
                 href={cooking.website}
@@ -105,10 +104,7 @@ function App() {
         </Section>
         <Section title="projects 🚀">
           {projects.map((project) => (
-            <div
-              key={project.title}
-              className="mt-2 box"
-            >
+            <div key={project.title} className="mt-2 box">
               <a
                 href={project.website}
                 target="_blank"
@@ -117,7 +113,9 @@ function App() {
                 {project.title}
               </a>
               <p className="text-secondary">{project.description}</p>
-              <p className="text-secondary mt-2">tech used: {project.tech.join(", ")}</p>
+              <p className="text-secondary mt-2">
+                tech used: {project.tech.join(", ")}
+              </p>
               <div className="flex gap-2 mt-2">
                 <a
                   href={project.website}
@@ -141,8 +139,16 @@ function App() {
           ))}
         </Section>
         <Section title="experience 💼">
-          <p className="text-secondary">While I haven't worked in the industry yet, I'm always learning and improving my skills by building projects and exploring new technologies.</p>
-          <p className="mt-2 text-secondary">I'm open to internship, freelance, or even full-time. If you're looking for a passionate front-end developer, feel free to reach out!</p>
+          <p className="text-secondary">
+            While I haven't worked in the industry yet, I'm always learning and
+            improving my skills by building projects and exploring new
+            technologies.
+          </p>
+          <p className="mt-2 text-secondary">
+            I'm open to internship, freelance, or even full-time. If you're
+            looking for a passionate front-end developer, feel free to reach
+            out!
+          </p>
           <div className="mt-2">
             <div className="flex flex-col gap-1 mt-2">
               <a
@@ -170,7 +176,7 @@ function App() {
         </Section>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
